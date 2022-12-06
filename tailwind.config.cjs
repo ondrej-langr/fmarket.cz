@@ -1,7 +1,17 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
+const tailwindScrollbar = require('tailwind-scrollbar');
 
 /** @type {import('tailwindcss/types/config').PluginCreator} */
-const projectPlugin = ({ addBase }) => {};
+const projectPlugin = ({ addComponents }) => {
+  addComponents({
+    '.text-column': {
+      maxWidth: 'none',
+      '@media and (min-width: 600px)': {
+        maxWidth: 460
+      }
+    }
+  })
+};
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -27,5 +37,7 @@ module.exports = {
       },
     },
   },
-  plugins: [projectPlugin],
+  plugins: [projectPlugin, tailwindScrollbar({
+    nocompatible: true
+  })],
 };
