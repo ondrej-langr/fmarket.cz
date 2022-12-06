@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "start": "serve dist/",
     "preview": "vite preview"
+  },
+  "dependencies": {
+    "serve": "^14.1.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
