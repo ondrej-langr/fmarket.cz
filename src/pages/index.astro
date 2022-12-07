@@ -1,0 +1,296 @@
+---
+import Layout from "../components/Layout.astro";
+
+import clockImmage from "../assets/clock.webp";
+import getMoreLeadsImage from "../assets/getMoreLeads.webp";
+import leadImage from "../assets/lead.webp";
+
+import { Image } from "@astrojs/image/components";
+---
+
+<Layout>
+  <section class="bg-green text-beige w-full py-16">
+    <div class="container">
+      <div class="flex-col flex gap-6 text-center lg:px-32 sm:px-16">
+        <h3
+          class="text-5xl font-bold md:max-w-4xl leading-tight break-words mx-auto"
+        >
+          Zvyšte mnohonásobně váš zisk díky novým zákazníkům
+        </h3>
+        <div class="text-2xl flex flex-col gap-6">
+          <p class="md:max-w-4xl mx-auto">
+            Nové zákazníky vám zprostředkujeme na míru dle vašich potřeb. Leads
+            z naší databáze jsou rozděleny na bezmála 20 různých odvětví z oborů
+            pojištění financí a investic.
+          </p>
+          <p class="md:max-w-4xl mx-auto">
+            Kontakty generujeme cílenými reklamními kampaněmi. Jedná se o
+            zájemce, kteří byli sami aktivní a mají odpovídající požadavek na
+            finanční produkty.
+          </p>
+          <p class="text-lg md:max-w-4xl mx-auto">
+            Již řadu let disponujeme funkční sítí různých finančních portálů,
+            které se zabývají získáváním zájemců pro různá odvětví pojištění.
+            Získávání zájemců však není naším primárním cílem. Jde nám především
+            o předání informací a objasnění všech otázek k tomuto citlivému
+            tématu. Všechny datové záznamy jsou ihned po příchodu automaticky i
+            ručně kontrolovány na poptávky a duplikáty a předány danému makléři.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-light-green w-full py-16">
+    <div class="container">
+      <div class="flex-col flex justify-center gap-6 text-center uppercase">
+        <h3 class="text-6xl leading-tight">Vyberte si</h3>
+        <h4 class="text-xl mb-10">
+          Zvolte si pro Váš vhodný balíček z naší nabídky
+        </h4>
+        <div
+          class="flex gap-14 lg:gap-auto flex-col lg:flex-row justify-center"
+        >
+          <article
+            class="w-full sm:w-96 sm:mx-auto lg:mx-0 lg:w-80 h-max bg-white rounded-3xl flex flex-col gap-9 pb-6"
+          >
+            <Image class="rounded-3xl" src={getMoreLeadsImage} alt="" />
+            <h1 class="text-3xl font-bold">Leadmarkt <br />standard</h1>
+            <a
+              class="font-bold rounded-3xl bg-dark-green text-white max-w-[60%] w-[100%] py-3 px-5 mx-auto"
+              href="#standard">Více zde</a
+            >
+          </article>
+          <article
+            class="w-full sm:w-96 sm:mx-auto lg:mx-0 lg:w-80 h-max bg-white rounded-3xl flex flex-col gap-9 pb-6"
+          >
+            <Image class="rounded-3xl" src={leadImage} alt="" />
+            <h1 class="text-3xl font-bold">
+              Leadmarkt <br />
+              toplead
+            </h1>
+            <a
+              class="font-bold rounded-3xl bg-dark-green text-white max-w-[60%] w-[100%] py-3 px-5 mx-auto"
+              href="#toplead">Více zde</a
+            >
+          </article>
+          <article
+            class="w-full sm:w-96 sm:mx-auto lg:mx-0 lg:w-80 h-max bg-white rounded-3xl flex flex-col gap-9 pb-6"
+          >
+            <Image class="rounded-3xl" src={clockImmage} alt="" />
+            <h1 class="text-3xl font-bold">
+              Leadmarkt <br />
+              termin
+            </h1>
+            <a
+              class="font-bold rounded-3xl bg-dark-green text-white max-w-[60%] w-[100%] py-3 px-5 mx-auto"
+              href="#termin">Více zde</a
+            >
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="standard" class="bg-beige w-full py-16 sm:py-28">
+    <div class="container">
+      <div class="flex-col flex justify-center gap-6 text-center">
+        <h3 class="text-5xl sm:text-6xl font-bold uppercase">
+          Leadmarkt <br />
+          <span class="normal-case">Standard</span>
+        </h3>
+        <div
+          class="flex flex-col md:flex-row justify-center text-lg text-justify gap-6 md:gap-20 text-column my-10"
+        >
+          <div class="flex-1 md:max-w-lg">
+            <h4 class="font-bold mb-2">
+              Co se stane s datovými záznamy po vygenerování?
+            </h4>
+            <p>
+              Leads generujeme až v okamžiku, kdy návštěvník obdržel základní
+              informace na našich portálech. Generování zájemců samozřejmě
+              podléhá přísným zákonům o ochraně dat a bez jakýchkoliv závazků.
+            </p>
+          </div>
+          <div class="flex-1 md:max-w-lg">
+            <h4 class="font-bold mb-2">
+              Pro koho jsou naše datové záznamy vhodné?
+            </h4>
+            <p>
+              Pro všechny zprostředkovatele finančních služeb, kteří již
+              pracovali s takovými záznamy v minulosti nebo pro nováčky, kteří
+              disponují již profesionální technikou telekomunikace a
+              poradenství.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="toplead" class="bg-green text-beige w-full py-16">
+    <div class="container">
+      <div class="flex-col flex justify-center gap-6 text-center">
+        <h3 class="text-5xl sm:text-6xl font-bold uppercase">
+          Leadmarkt <br />
+          <span class="normal-case">Toplead</span>
+        </h3>
+        <div class="flex flex-col gap-6 text-lg">
+          <p class="text-[1.2rem] md:max-w-4xl mx-auto">
+            Chceme vám nabídnout celé spektrum naších Leads. Můžete tak získat
+            normální jakožto kvalifikované a kvalifikovaně terminované datové
+            záznamy.
+          </p>
+          <div class="text-justify my-8">
+            <h4 class="font-bold text-center mb-1">Co znamená TopLead?</h4>
+            <ul class="list-disc ml-5 lg:mx-auto block md:max-w-4xl">
+              <li>zájemce si přeje další poradenství s makléřem</li>
+              <li>
+                předáme vám informace o tom, ve kterém časovém rozmezí lze
+                zájemce kontaktovat telefonicky
+              </li>
+              <li>
+                zájemce je minimálně je ve věku minimálně 18 let (dle odvětví
+                pojištění)
+              </li>
+              <li>zájemce je již informován o dalším postupu jeho poptávky</li>
+            </ul>
+          </div>
+          <div
+            class="flex flex-col md:flex-row justify-center text-justify gap-8 md:gap-20"
+          >
+            <div class="flex-1 md:max-w-lg">
+              <h4 class="font-bold">
+                Co se stane s datovými záznamy po vygenerování?
+              </h4>
+              <p>
+                Již získaný kvalitní Lead je přesměrován na naše call centrum,
+                které se snaží zájemce kontaktovat telefonicky. V rozhovoru jsou
+                již zmíněné podstatné body jakožto doplněna a ověřena všechna
+                data. Zájemce nám zároveň sdělí nejvhodnější časové rozmezí pro
+                další telefonickou komunikaci. Jakmile byl zájemce informován o
+                dalších postupech (telefonát s vámi je již předem avizován) a je
+                ověřen zájem poptávky, předáme vám tento kvalifikovaný TopLead.
+              </p>
+            </div>
+            <div class="flex-1 md:max-w-lg">
+              <h4 class="font-bold">
+                Pro koho jsou naše datové záznamy vhodné?
+              </h4>
+              <p>
+                Pro zprostředkovatele finančních služeb, kteří očekávají vysokou
+                kvalitu, chtějí si ušetřit čas s minimální reklamací a přejí si
+                výhradně předem vyselektované Leads, které již byly telefonicky
+                kontaktovány.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="termin" class="bg-light-green w-full py-16 sm:py-28">
+    <div class="container">
+      <div class="flex-col flex justify-center gap-6 text-center">
+        <div class="flex flex-col gap-6">
+          <h3 class="text-5xl sm:text-6xl font-bold uppercase">
+            Leadmarkt <br />
+            <span class="normal-case">Termin</span>
+          </h3>
+          <p class="text-lg">
+            Nabízíme vám kompletní spektrum Leads a navíc pro vás sjednáme
+            předem fixní termín se zájemci.
+          </p>
+        </div>
+        <div
+          class="flex flex-col md:flex-row justify-center text-lg text-justify gap-6 md:gap-20"
+        >
+          <div class="flex-1 md:max-w-lg">
+            <h4 class="font-bold mb-2">
+              Co se stane s datovými záznamy po vygenerování?
+            </h4>
+            <p>
+              Datové záznamy se ověřují stejnou metodou jako v případě TopLeads
+              navíc však s klientem sjednáme již předem daný a pevný termín
+              poradenství.
+            </p>
+          </div>
+          <div class="flex-1 md:max-w-lg">
+            <h4 class="font-bold mb-2">
+              Pro koho jsou naše datové záznamy vhodné?
+            </h4>
+            <p>
+              Pro zprostředkovatele finančních služeb, kteří očekávají vysokou
+              kvalitu Leads a chtějí si ušetřit čas obvoláváním zájemců.
+              Obdržíte tak klienty, kteří mají zájem o konkrétní službu a
+              očekávají s vámi schůzku či telefonát v pevně stanovaném termínu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-beige w-full py-16">
+    <div class="container">
+      <div class="flex flex-col gap-12 text-lg">
+        <div class="flex flex-col gap-6 text-center">
+          <h3 class="text-5xl font-bold uppercase">Odvětví</h3>
+          <p class="uppercase font-bold">
+            Máme pro Vás kvalifikované nové zákazníky na míru!
+          </p>
+          <p>Nabízíme následující odvětví z oborů financí a pojištění:</p>
+        </div>
+        <div class="flex lg:flex-row flex-col gap-12">
+          <div class="flex flex-col flex-1 gap-6">
+            <p
+              class="text-center uppercase font-bold rounded-full bg-dark-green text-white py-6"
+            >
+              Financování
+            </p>
+            <ul class="list-[square] ml-9">
+              <li>financování</li>
+              <li>nemovitostí/staveb</li>
+              <li>investiční financování</li>
+              <li>půjčky v cizích měnách</li>
+            </ul>
+          </div>
+          <div class="flex flex-col flex-1 gap-6">
+            <p
+              class="text-center uppercase font-bold rounded-full bg-dark-green text-white px-9 2xl:px-0 py-6 whitespace-nowrap"
+            >
+              Zdravotní pojištění
+            </p>
+            <ul class="list-[square] ml-9">
+              <li>soukromé zdravotní pojištění</li>
+              <li>soukromé zdravotní připojištění</li>
+              <li>státní zdravotní pojištění</li>
+            </ul>
+          </div>
+          <div class="flex flex-col flex-1 gap-6">
+            <p
+              class="text-center uppercase font-bold rounded-full bg-dark-green text-white py-6"
+            >
+              Pojištění
+            </p>
+            <ul class="list-[square] ml-9">
+              <li>pojištění nemovitosti</li>
+              <li>investiční a kapitálové životní pojištění</li>
+            </ul>
+          </div>
+          <div class="flex flex-col flex-1 gap-6">
+            <p
+              class="text-center uppercase font-bold rounded-full bg-dark-green text-white py-6"
+            >
+              Investice
+            </p>
+            <ul class="list-[square] ml-9">
+              <li>uložení kapitálu</li>
+              <li>kapitálové investice</li>
+              <li>investiční nemovitosti</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
