@@ -1,6 +1,4 @@
 ---
-import heroBannerImage from "../assets/hero-banner-image.webp";
-import { Image } from "@astrojs/image/components";
 ---
 
 <!DOCTYPE html>
@@ -21,36 +19,6 @@ import { Image } from "@astrojs/image/components";
     <title>FUTURE MARKET</title>
   </head>
   <body>
-    <header class="bg-beige w-full py-16">
-      <div class="container">
-        <div class="flex flex-col">
-          <h1 class="leading-[1.1] text-base font-bold">
-            FUTURE <br /><span class="font-normal"> MARKET</span>
-          </h1>
-          <div class="flex justify-between sm:overflow-hidden">
-            <div class="z-10 flex flex-col gap-6">
-              <h2
-                class="text-green pt-16 text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.15] sm:whitespace-nowrap"
-              >
-                Jsme jednička
-                <br />
-                <span class="text-dark-green"> v lead marketingu</span>
-              </h2>
-              <p class="text-2xl leading-9 max-w-sm">
-                Jsme jedinečná možnost pro růst vašeho businessu. Pro naše
-                klienty poskytujeme kvalitní zákaznické portfolio.
-              </p>
-            </div>
-            <Image
-              class="hidden h-auto w-full lg:block max-w-sm xl:max-w-2xl 2xl:max-w-3xl translate-y-10 xl:translate-y-0 -translate-x-12 xl:-translate-x-16 2xl:-translate-x-20"
-              src={heroBannerImage}
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </header>
-
     <slot />
 
     <footer class="bg-dark-green text-beige w-full py-16 sm:py-56">

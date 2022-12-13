@@ -6,14 +6,18 @@ import getMoreLeadsImage from "../assets/getMoreLeads.webp";
 import leadImage from "../assets/lead.webp";
 
 import { Image } from "@astrojs/image/components";
+import HeroBanner from "../components/page-components/HeroBanner.astro";
 ---
 
 <Layout>
+  <HeroBanner />
+
+  {/* First section */}
   <section class="bg-green text-beige w-full py-16">
     <div class="container">
       <div class="flex-col flex gap-6 text-center lg:px-32 sm:px-16">
         <h3
-          class="text-5xl font-bold md:max-w-4xl leading-tight break-words mx-auto"
+          class="text-3xl sm:text-5xl font-bold md:max-w-4xl leading-tight break-words mx-auto"
         >
           Zvyšte mnohonásobně váš zisk díky novým zákazníkům
         </h3>
@@ -40,10 +44,12 @@ import { Image } from "@astrojs/image/components";
       </div>
     </div>
   </section>
+
+  {/* second section */}
   <section class="bg-light-green w-full py-16">
     <div class="container">
       <div class="flex-col flex justify-center gap-6 text-center uppercase">
-        <h3 class="text-6xl leading-tight">Vyberte si</h3>
+        <h3 class="text-4xl sm:text-6xl leading-tight">Vyberte si</h3>
         <h4 class="text-xl mb-10">
           Zvolte si pro Váš vhodný balíček z naší nabídky
         </h4>
@@ -91,15 +97,16 @@ import { Image } from "@astrojs/image/components";
     </div>
   </section>
 
+  {/* Third section */}
   <section id="standard" class="bg-beige w-full py-16 sm:py-28">
     <div class="container">
       <div class="flex-col flex justify-center gap-6 text-center">
-        <h3 class="text-5xl sm:text-6xl font-bold uppercase">
+        <h3 class="text-4xl sm:text-6xl font-bold uppercase">
           Leadmarkt <br />
           <span class="normal-case">Standard</span>
         </h3>
         <div
-          class="flex flex-col md:flex-row justify-center text-lg text-justify gap-6 md:gap-20 text-column my-10"
+          class="flex flex-col md:flex-row justify-center text-lg text-justify gap-6 md:gap-20 text-column my-5 sm:my-10"
         >
           <div class="flex-1 md:max-w-lg">
             <h4 class="font-bold mb-2">
@@ -127,10 +134,11 @@ import { Image } from "@astrojs/image/components";
     </div>
   </section>
 
+  {/* Fourth section */}
   <section id="toplead" class="bg-green text-beige w-full py-16">
     <div class="container">
       <div class="flex-col flex justify-center gap-6 text-center">
-        <h3 class="text-5xl sm:text-6xl font-bold uppercase">
+        <h3 class="text-4xl sm:text-6xl font-bold uppercase">
           Leadmarkt <br />
           <span class="normal-case">Toplead</span>
         </h3>
@@ -189,11 +197,12 @@ import { Image } from "@astrojs/image/components";
     </div>
   </section>
 
+  {/* Fifth section */}
   <section id="termin" class="bg-light-green w-full py-16 sm:py-28">
     <div class="container">
       <div class="flex-col flex justify-center gap-6 text-center">
         <div class="flex flex-col gap-6">
-          <h3 class="text-5xl sm:text-6xl font-bold uppercase">
+          <h3 class="text-4xl sm:text-6xl font-bold uppercase">
             Leadmarkt <br />
             <span class="normal-case">Termin</span>
           </h3>
@@ -230,11 +239,13 @@ import { Image } from "@astrojs/image/components";
       </div>
     </div>
   </section>
+
+  {/* Sixth section */}
   <section class="bg-beige w-full py-16">
     <div class="container">
       <div class="flex flex-col gap-12 text-lg">
         <div class="flex flex-col gap-6 text-center">
-          <h3 class="text-5xl font-bold uppercase">Odvětví</h3>
+          <h3 class="text-4xl sm:text-6xl font-bold uppercase">Odvětví</h3>
           <p class="uppercase font-bold">
             Máme pro Vás kvalifikované nové zákazníky na míru!
           </p>
